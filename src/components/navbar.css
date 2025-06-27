@@ -1,0 +1,123 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+  height: 5.3rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-logo .logo img {
+  height: 9rem;
+  object-fit: contain;
+}
+
+.navbar-links .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-links .nav-links li a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links .nav-links li a:hover {
+  color: #888;
+}
+
+/* HAMBURGER */
+.mobile-hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: absolute;
+  top: 100%; /* κάτω από το navbar */
+  left: 0;
+  width: 100%;
+  background-color: #fafafaf2;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  gap: 1.5rem;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  max-height: 400px; /* ή όσο θέλεις, αρκετό για τα links */
+  padding: 1.5rem;
+}
+
+.mobile-menu a {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: #444343;
+}
+
+.close-icon {
+  align-self: flex-end;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  color: rgb(3, 3, 3);
+}
+
+/* SOCIALS */
+.mobile-socials {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.mobile-socials a {
+  color: rgb(102, 101, 101);
+  transition: color 0.3s ease;
+}
+
+.mobile-socials a:hover {
+  color: #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-hamburger {
+    display: block;
+  }
+
+  .navbar-logo .logo img {
+    height: 2.5rem;
+  }
+
+  .navbar-container {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,139 @@
+.second-section {
+  text-align: center;
+  padding: 1rem 0rem;
+  background-color: #fffdfd;
+  font-family: 'Arial', sans-serif;
+  color: #111;
+}
+
+.section-title {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 900;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.0625rem; /* 1px */
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.eyewear-card {
+  width: 15.625rem; /* 250px */
+  text-align: center;
+}
+
+.card-title {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+  letter-spacing: 0.125rem; /* 2px */
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 0.75rem; /* 12px */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Wrapper για hover effect */
+.image-wrapper {
+  position: relative;
+  width: 16.875rem; /* 270px */
+  height: 16.875rem; /* 270px */
+  overflow: hidden;
+}
+
+/* Εικόνα */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 4px 12px */
+  transition: opacity 0.4s ease;
+  display: block;
+}
+
+/* Overlay κουτί */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: #111;
+  font-weight: 700;
+  font-size: 1.125rem; /* 18px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-transform: uppercase;
+  pointer-events: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hover Effects */
+.image-wrapper:hover .card-image {
+  opacity: 0.4;
+}
+
+.image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .card-row {
+    gap: 2rem;
+  }
+
+  .eyewear-card {
+    width: 12.5rem; /* 200px */
+  }
+
+  .image-wrapper {
+    width: 13.75rem; /* 220px */
+    height: 13.75rem;
+  }
+
+  .card-title {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .image-overlay {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .eyewear-card {
+    width: 100%;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* για τετράγωνη εικόνα χωρίς να ορίζουμε fixed ύψος */
+  }
+
+  .card-title {
+    font-size: 0.6875rem; /* 11px */
+  }
+
+  .image-overlay {
+    font-size: 0.875rem;
+  }
+}
