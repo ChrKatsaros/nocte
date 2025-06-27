@@ -208,6 +208,43 @@
 
 @media (max-width: 480px) {
   .third-title {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-weight: 900;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: #222;
+    margin: 0;
+  }
+  .horizontal-text {
+    position: relative;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #2ecc71;
+    font-weight: 900;
+    user-select: none;
+    z-index: 0;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+
+  .horizontal-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    color: #ff69b4;
+    writing-mode: vertical-rl;
+
+    font-weight: 900;
+    opacity: 0.7;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+  }
+
+  .third-title {
     font-size: 1.5rem;
   }
 
@@ -221,6 +258,6 @@
 
   .third-button {
     width: 100%;
-    padding: 12px 0;
+    padding: 18px 12px;
   }
 }

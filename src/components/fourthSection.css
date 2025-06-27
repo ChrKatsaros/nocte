@@ -166,7 +166,7 @@
 
 @media (max-width: 480px) {
   .products-row {
-    grid-template-columns: 1fr; /* 1 στήλη */
+    grid-template-columns: 1fr 1fr; /* 1 στήλη */
   }
 
   .fourth-section {

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import firstSectionIMG1 from '../assets/firstSectionIMG1.jpg';
-import firstSectionIMG2 from '../assets/firstSectionIMG2.jpg';
+import firstSectionIMG1 from '../assets/firstSectionIMG1.webp';
+import firstSectionIMG2 from '../assets/firstSectionIMG2.webp';
 import '../components/firstSection.css';
-
 function FirstSection() {
   const [zoom, setZoom] = useState(1);
 

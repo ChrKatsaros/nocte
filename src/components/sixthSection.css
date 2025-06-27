@@ -110,6 +110,15 @@
 }
 
 @media (max-width: 480px) {
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+  }
+
   .sixth-title {
     font-size: 1.3rem;
   }
@@ -125,7 +134,10 @@
   }
 
   .social-icons {
-    gap: 1rem;
+    gap: 1.3rem;
+    align-self: center;
+    position: relative;
+    left: 10px;
   }
 
   .social-icons svg {

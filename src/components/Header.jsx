@@ -1,5 +1,5 @@
 import React from 'react';
-import headerIMG from '../assets/headerIMG.jpg';
+import headerIMG from '../assets/headerIMG.webp';
 import '../components/header.css';
 
 function Header() {
