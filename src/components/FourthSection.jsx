@@ -1,6 +1,6 @@
 // FourthSection.jsx
 import React from 'react';
-import './FourthSection.css';
+import './fourthSection.css';
 import NewProductsArray from './NewProductsArray';
 
 const FourthSection = () => {

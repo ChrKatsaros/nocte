@@ -1,6 +1,6 @@
 // FifthSection.jsx
 import React from 'react';
-import './FifthSection.css';
+import './fifthSection.css';
 import AccessoryImage from '../assets/5SIMG1.webp'; // φρόντισε η εικόνα να υπάρχει
 
 const FifthSection = () => {

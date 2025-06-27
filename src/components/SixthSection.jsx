@@ -1,6 +1,6 @@
 // SixthSection.jsx
 import React from 'react';
-import './SixthSection.css';
+import './sixthSection.css';
 import {
   FaInstagram,
   FaFacebookF,
