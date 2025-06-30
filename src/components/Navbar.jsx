@@ -1,12 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import {
-  FaBars,
-  FaTimes,
-  FaFacebookF,
-  FaInstagram,
-  FaPhoneAlt,
-} from 'react-icons/fa';
+import { FaBars, FaFacebookF, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 import './navbar.css';
 import logo from '../assets/logo.png';
 
@@ -70,10 +64,6 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-        <div className="close-icon" onClick={closeMenu}>
-          <FaTimes size={26} />
-        </div>
-
         <Link to="/sunglasses" onClick={closeMenu}>
           Sunglasses
         </Link>

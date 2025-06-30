@@ -80,13 +80,6 @@
   color: #444343;
 }
 
-.close-icon {
-  align-self: flex-end;
-  margin-bottom: 1.5rem;
-  cursor: pointer;
-  color: rgb(3, 3, 3);
-}
-
 /* SOCIALS */
 .mobile-socials {
   margin-top: auto;
