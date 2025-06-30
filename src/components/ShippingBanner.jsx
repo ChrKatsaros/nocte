@@ -6,8 +6,8 @@ function ShippingBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 300);
-    const autoClose = setTimeout(() => setVisible(false), 8300); // 5 sec μετά
+    const timer = setTimeout(() => setVisible(true), 5000);
+    const autoClose = setTimeout(() => setVisible(false), 9300); // 5 sec μετά
 
     return () => {
       clearTimeout(timer);
