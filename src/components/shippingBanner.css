@@ -30,3 +30,17 @@
 .shipping-banner .close-icon:hover {
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .shipping-banner {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .shipping-banner .close-icon {
+    font-size: 1.1rem;
+  }
+}
